@@ -5,6 +5,7 @@ ExitProcess PROTO, dwExitCode:DWORD
 .data
 ;variables goes here
 .code
+main proc
 ;code goes here
 INVOKE ExitProcess, eax
 main ENDP

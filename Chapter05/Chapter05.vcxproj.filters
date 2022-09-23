@@ -18,5 +18,35 @@
     <MASM Include="MASMTemplate.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="CodePageDemo.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="colors.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="InputLoop.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="msgbox.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="msgboxAsk.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="RevStr.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="TestArraySum.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="TestLib1.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="TestLib2.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="TestLib3.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
   </ItemGroup>
 </Project>

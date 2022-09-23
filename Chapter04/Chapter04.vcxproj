@@ -18,18 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <MASM Include="AdditionTest.asm" />
-    <MASM Include="CopyStr.asm" />
-    <MASM Include="Moves.asm" />
-    <MASM Include="Operator.asm" />
-    <MASM Include="Pointers.asm" />
-    <MASM Include="SumArray.asm" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3ed7485a-e234-4ce8-83b5-23e5763a3f9e}</ProjectGuid>
+    <ProjectGuid>{1d6c5711-667b-43fa-89ca-91c9e543c27f}</ProjectGuid>
     <RootNamespace>Chapter04</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -147,6 +139,15 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <MASM Include="AdditionTest.asm" />
+    <MASM Include="CopyStr.asm" />
+    <MASM Include="MASMTemplate.asm" />
+    <MASM Include="Moves.asm" />
+    <MASM Include="Operator.asm" />
+    <MASM Include="Pointers.asm" />
+    <MASM Include="SumArray.asm" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />

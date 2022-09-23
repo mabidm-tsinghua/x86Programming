@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{20c60454-3d69-4340-b0af-506142cddff1}</ProjectGuid>
+    <ProjectGuid>{ab16bf4a-c6bb-453b-8323-75eda96e705e}</ProjectGuid>
     <RootNamespace>Chapter05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -73,6 +73,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\libs</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -93,6 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Irvine32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,7 +143,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <MASM Include="CodePageDemo.asm" />
+    <MASM Include="colors.asm" />
+    <MASM Include="InputLoop.asm" />
     <MASM Include="MASMTemplate.asm" />
+    <MASM Include="msgbox.asm" />
+    <MASM Include="msgboxAsk.asm" />
+    <MASM Include="RevStr.asm" />
+    <MASM Include="TestArraySum.asm" />
+    <MASM Include="TestLib1.asm" />
+    <MASM Include="TestLib2.asm" />
+    <MASM Include="TestLib3.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -91,9 +91,19 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
+    <MASM>
+      <GeneratePreprocessedSourceListing>false</GeneratePreprocessedSourceListing>
+    </MASM>
+    <MASM>
+      <AssembledCodeListingFile>$(IntDir)$(ProjectName).lst</AssembledCodeListingFile>
+      <ListAllAvailableInformation>true</ListAllAvailableInformation>
+      <EnableAssemblyGeneratedCodeListing>true</EnableAssemblyGeneratedCodeListing>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -110,6 +120,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -140,7 +153,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <MASM Include="MASMTemplate.asm" />
+    <MASM Include="AddTwoSum.asm" />
+    <MASM Include="AddVariables.asm" />
+    <MASM Include="AddTwo.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

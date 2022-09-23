@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="MASMTemplate.asm">
+    <MASM Include="AddTwo.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="AddTwoSum.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="AddVariables.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>

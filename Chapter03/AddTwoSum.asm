@@ -5,17 +5,20 @@
 .stack 4096
 ExitProcess proto,dwExitCode:dword
 
+
 .data
-sum dword 0
+x dword 4
+y dword 6
+z dword ?
 
 .code
 main0 proc
-	mov	eax,5				
-	add	eax,6				
-	mov sum,eax
+	mov	eax,x	;			
+	add	eax,y				
+	mov z,eax
+	
 
 	invoke ExitProcess,0
 main0 endp
-end 
-
+end main0
 ;everything after end is ignored

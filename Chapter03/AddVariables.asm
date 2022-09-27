@@ -23,7 +23,7 @@ AddVariables proc
 	mov    bx,0A69Bh
 	movzx  eax,bx		; EAX = 0000A69Bh
 	movzx  edx,bl		; EDX = 0000009Bh
-	movzx  cx,bl		; CX  = 009Bh
+	movzx  cx,bl		;; CX  = 009Bh
 
 ;  MOVSX
 	mov   bx,0A69Bh

@@ -20,5 +20,5 @@ main0 proc
 
 	invoke ExitProcess,0
 main0 endp
-end main0
+end 
 ;everything after end is ignored

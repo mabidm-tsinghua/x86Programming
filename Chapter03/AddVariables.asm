@@ -21,7 +21,7 @@ AddVariables proc
 
 ;  MOVZX
 	mov    bx,0A69Bh
-	movzx  eax,bx		; EAX = 0000A69Bh
+	movzx  eax,bx		     ; EAX = 0000A69Bh
 	movzx  edx,bl		; EDX = 0000009Bh
 	movzx  cx,bl		;; CX  = 009Bh
 
@@ -53,4 +53,4 @@ AddVariables proc
 
 	Invoke ExitProcess,0
 AddVariables endp
-end 
+end AddVariables

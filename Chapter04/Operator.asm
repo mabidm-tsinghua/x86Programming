@@ -32,8 +32,6 @@ X = SIZEOF array2		; 2 * (5 * 3)
 X = SIZEOF array3		; 4 * 4
 X = SIZEOF digitStr		; 1 * 9
 
-END
-
 .code
 main2 PROC
 

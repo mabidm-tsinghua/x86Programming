@@ -18,7 +18,7 @@ main proc
 	mov  eax,0						; 3: sum = 0
 L1:									; 4: mark beginning of loop
 	add  eax,[edi]					; 5: add an integer
-	add  edi,TYPE dword ;size of intarray  		; 6: point to next element
+	add  edi,TYPE intarray ;size of element in intarray;TYPE dword; 6: point to next element
 	loop L1							; 7: repeat until ECX = 0
 
 	invoke ExitProcess,0

@@ -10,6 +10,7 @@
 ExitProcess proto,dwExitCode:dword
 
 .data
+;sdword is for programmer hint
 Rval   SDWORD ?
 Xval   SDWORD -2
 Yval   SDWORD 30
@@ -54,4 +55,4 @@ main5 proc
 
 	invoke ExitProcess,0
 main5 endp
-end main5
+end 

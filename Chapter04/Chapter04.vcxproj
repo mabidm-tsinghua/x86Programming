@@ -94,6 +94,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <MASM>
+      <AssembledCodeListingFile>$(IntDir)$(ProjectName).lst</AssembledCodeListingFile>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -142,7 +145,6 @@
   <ItemGroup>
     <MASM Include="AdditionTest.asm" />
     <MASM Include="CopyStr.asm" />
-    <MASM Include="MASMTemplate.asm" />
     <MASM Include="Moves.asm" />
     <MASM Include="Operator.asm" />
     <MASM Include="Pointers.asm" />

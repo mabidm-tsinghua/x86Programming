@@ -8,7 +8,7 @@ INCLUDE Irvine32.inc
 str1 BYTE "Sample string, in color",0dh,0ah,0
 
 .code
-main8 PROC
+main28 PROC
 
 	mov	ax,yellow + (blue * 16)
 	call	SetTextColor
@@ -20,6 +20,6 @@ main8 PROC
 	call	DumpRegs
 
 	exit
-main8 ENDP
+main28 ENDP
 
 END 

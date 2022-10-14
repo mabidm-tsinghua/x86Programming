@@ -7,12 +7,12 @@ INCLUDE Irvine32.inc
 TAB = 9		; ASCII code for Tab
 
 .code
-main1 PROC
+main21 PROC
 	call	Randomize		; init random generator
 	call	Rand1
 	call	Rand2
 	exit
-main1 ENDP
+main21 ENDP
 
 Rand1 PROC
 ; Generate ten pseudo-random integers.

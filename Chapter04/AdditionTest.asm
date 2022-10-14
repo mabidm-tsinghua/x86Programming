@@ -55,4 +55,4 @@ main5 proc
 
 	invoke ExitProcess,0
 main5 endp
-end 
+end main5

@@ -15,7 +15,7 @@ arrayD SDWORD 12345678h,1A4B2000h,3434h,7AB9h
 prompt BYTE "Enter a 32-bit signed integer: ",0
 
 .code
-main7 PROC
+main27 PROC
 
 ; Set text color to blue text on a light gray background
 
@@ -58,5 +58,5 @@ L1:  mov   edx,OFFSET prompt
 	call	 Clrscr
 	
 	exit
-main7 ENDP
+main27 ENDP
 END 

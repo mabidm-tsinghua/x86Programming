@@ -10,7 +10,7 @@ question BYTE "Thank you for completing the survey."
 results BYTE "The results will be sent via email.",0dh,0ah,0
 
 .code
-main5 PROC
+main25 PROC
 
 	mov ebx,OFFSET caption
 	mov edx,OFFSET question
@@ -18,6 +18,6 @@ main5 PROC
 	;(check return value in EAX)
 
 	exit
-main5 ENDP
+main25 ENDP
 
 END 

@@ -48,5 +48,19 @@
     <MASM Include="TestLib3.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="sumarray.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\Irvine32.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\SmallWin.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\VirtualKeys.inc">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

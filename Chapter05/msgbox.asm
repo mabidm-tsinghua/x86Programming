@@ -9,7 +9,7 @@ HelloMsg BYTE "This is a pop-up message box.", 0dh,0ah
 	    BYTE "Click OK to continue...", 0 
 
 .code
-main6 PROC
+main26 PROC
 
 	mov	ebx,0				; no caption
 	mov	edx,OFFSET HelloMsg		; contents
@@ -20,6 +20,6 @@ main6 PROC
 	call	MsgBox
 
 	exit
-main6 ENDP
+main26 ENDP
 
 END 

@@ -7,11 +7,11 @@
 ExitProcess proto,dwExitCode:dword
 
 .data
-aName byte "Abraham Lincoln",0
-nameSize = ($ - aName) - 1
+aName byte "Abraham Lincoln",0 ;this storage will be updated
+nameSize = ($ - aName) - 1 ; -1 for null char
 
 .code
-main4 proc
+main1 proc
 
 ; Push the name on the stack.
 
@@ -35,5 +35,5 @@ L2:	pop  eax				; get character
 	loop L2
 
 	Invoke ExitProcess,0
-main4 endp
+main1 endp
 end 

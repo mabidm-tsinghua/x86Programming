@@ -11,7 +11,7 @@ prompt1    BYTE "Enter a 32-bit signed integer: ",0
 dwordVal   DWORD ?
 
 .code
-main2 PROC
+main3 PROC
 ; Set text color to yellow text on blue background:
 	mov	eax,yellow + (blue * 16) ; blue background val = blue * 16 
 	call	SetTextColor
@@ -45,5 +45,5 @@ main2 PROC
 	call	SetTextColor
 	call	Clrscr
 	exit
-main2 ENDP
-END main2
+main3 ENDP
+END main3

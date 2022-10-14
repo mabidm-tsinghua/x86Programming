@@ -96,6 +96,8 @@
     </Link>
     <MASM>
       <AssembledCodeListingFile>$(IntDir)$(ProjectName).lst</AssembledCodeListingFile>
+      <EnableAssemblyGeneratedCodeListing>
+      </EnableAssemblyGeneratedCodeListing>
     </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

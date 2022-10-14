@@ -9,7 +9,7 @@ ExitProcess PROTO, dwExitCode:dword
 
 .data
 source  byte  "This is the source string",0
-target  byte  SIZEOF source DUP(0),0 ; count DUP(integer)
+target  byte  SIZEOF source DUP(0) ; count DUP(integer)
 
 
 .code
@@ -25,4 +25,4 @@ L1:
 
 	invoke ExitProcess,0
 main4 endp
-end main4
+end 

@@ -8,6 +8,7 @@
 ExitProcess PROTO, dwExitCode:dword
 
 ; Create user-defined types.
+;typedef unsigned int size_t;
 PBYTE  TYPEDEF PTR BYTE		; pointer to bytes
 PWORD  TYPEDEF PTR WORD		; pointer to words
 PDWORD TYPEDEF PTR DWORD		; pointer to doublewords

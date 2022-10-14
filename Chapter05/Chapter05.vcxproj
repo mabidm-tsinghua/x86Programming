@@ -150,10 +150,16 @@
     <MASM Include="msgbox.asm" />
     <MASM Include="msgboxAsk.asm" />
     <MASM Include="RevStr.asm" />
+    <MASM Include="sumarray.asm" />
     <MASM Include="TestArraySum.asm" />
     <MASM Include="TestLib1.asm" />
     <MASM Include="TestLib2.asm" />
     <MASM Include="TestLib3.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\Irvine32.inc" />
+    <None Include="..\include\SmallWin.inc" />
+    <None Include="..\include\VirtualKeys.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

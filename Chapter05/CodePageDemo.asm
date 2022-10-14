@@ -23,7 +23,7 @@ divider    BYTE " - ",0
 codepage   DWORD 1252
 
 .code
-main9 PROC
+main29 PROC
 	invoke SetConsoleOutputCP, codePage
 
 	mov  ecx,255
@@ -38,7 +38,7 @@ L1:
 	Loop L1
 
 	exit
-main9 ENDP
+main29 ENDP
 END 
 
 
